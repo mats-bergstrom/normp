@@ -1,0 +1,24 @@
+normp -- norms power data
+
+Reads power data from the HAN port and from an inverter.
+
+P_ut  utilisedP      Used power according to the power meter
+P_in  exportedP      Sold power according to the power meter
+P_sun sunP	     Power from inverter to system
+
+The "Norm power" is the actually used power:
+	P_norm = A x P_sun + P_ut - P_in
+where A is a calibration factor (ideally 1.0).
+
+Uses MQTT
+
+Topics
+  IN
+	utilisedP
+	exportedP
+	sunP
+
+  OUT
+	normP
+	
+

@@ -1,0 +1,9 @@
+*.o
+.#*
+*~
+*.log
+normp
+cfgf
+private-normp.cfg
+push.sh
+
